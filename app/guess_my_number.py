@@ -8,7 +8,7 @@ import random
 
 print('\tДобпро пожаловать в игру "Отгадай число"!')
 print('\nЯ загадал натуральное число из диапазона от 1 до 100.')
-print('Постарайтесь отгадать его за минимальное число попыток.\n')
+print('У вас всего 7 попыток.\n')
 
 # начальные значения
 the_number = random.randint(1, 100)
@@ -19,6 +19,8 @@ tries = 1
 while guess != the_number:
     if guess > the_number:
         print('Меньше...')
+    elif tries :
+        print('')
     else:
         print('Больше...')
     guess = int(input('Ваше предположение: '))
